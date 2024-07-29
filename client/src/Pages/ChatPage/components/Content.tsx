@@ -1,4 +1,5 @@
 import img from "../../../assets/img/chat/bg-image.png";
+import InputBox from "./InputBox";
 import ModelSelection from "./ModelSelection";
 import PluginsAdd from "./PluginsAdd";
 const Content = () => {
@@ -20,6 +21,7 @@ const Content = () => {
           {/* Models  */}
           <ModelSelection />
           <PluginsAdd/>
+          <InputBox/>
         </div>
       </div>
     </div>

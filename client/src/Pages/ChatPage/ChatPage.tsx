@@ -30,6 +30,7 @@ const ChatPage = () => {
         <div className="p-4 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
           {/* Main content */}
           <Content />
+          
         </div>
       </div>
     </div>
