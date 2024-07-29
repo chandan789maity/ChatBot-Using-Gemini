@@ -9,5 +9,35 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const lightSwitches = document.querySelectorAll('.light-switch');
+        if (localStorage.getItem('dark-mode') === 'true') {
+          document.documentElement.classList.add('dark');
+          lightSwitches.forEach(lightSwitch => {
+            lightSwitch.checked = true;
+          });
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+        lightSwitches.forEach((lightSwitch, i) => {
+          lightSwitch.addEventListener('change', () => {
+            const { checked } = lightSwitch;
+            lightSwitches.forEach((el, n) => {
+              if (n !== i) {
+                el.checked = checked;
+              }
+            });
+            if (checked) {
+              document.documentElement.classList.add('dark');
+              localStorage.setItem('dark-mode', 'true');
+            } else {
+              document.documentElement.classList.remove('dark');
+              localStorage.setItem('dark-mode', 'false');
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
