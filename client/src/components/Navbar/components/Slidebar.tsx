@@ -13,7 +13,7 @@ const Sidebar = React.forwardRef<HTMLDivElement, SidebarProps>(
       <aside
         ref={ref}
         id="default-sidebar"
-        className={`fixed top-4 max-sm:top-28 max-sm:bottom-24 left-4 rounded-2xl bottom-4 z-40 w-72 max-sm:w-72 h-auto bg-gray-50 shadow-2xl shadow-sky-300 dark:bg-[#111c44] dark:backdrop-blur-xl  transition-transform duration-300 ${
+        className={`fixed top-4 max-sm:top-28 max-sm:bottom-24 max-sm:h-3/5 left-4 rounded-2xl bottom-4 z-40 w-72 max-sm:w-72 h-auto bg-gray-50 shadow-2xl shadow-sky-300 dark:bg-[#111c44] dark:backdrop-blur-xl  transition-transform duration-300 ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-80"
         } sm:translate-x-0`}
         aria-label="Sidebar"
