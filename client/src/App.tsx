@@ -5,7 +5,7 @@ import ChatPage from "./Pages/ChatPage/ChatPage";
 
 function App() {
   return (
-    <div>
+    <div className="bg-sky-50 dark:bg-[#0b1437]">
       <ChatPage/>
 
     </div>
