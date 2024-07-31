@@ -88,13 +88,13 @@ const InputBox: React.FC = () => {
               type="text"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full outline-none focus:border-indigo-400 focus:border-[1px] bg-white text-sm px-5 py-3 rounded-l-3xl max-sm:px-3 max-sm:py-2 shadow-2xl shadow-cyan-400"
+              className="w-full outline-none focus:border-indigo-400 focus:border-[1px] bg-white text-sm px-5 py-3 rounded-l-3xl max-sm:px-3 max-sm:py-3 shadow-2xl shadow-cyan-400"
               placeholder="Ask me Anything"
               required
             />
             <button
               type="submit"
-              className="flex items-center p-4 max-sm:px-3 max-sm:py-2 px-7 text-sm font-medium text-white bg-blue-600 rounded-r-3xl max-sm:text-xs focus:border-indigo-400 focus:border-[1px] shadow-cyan-400"
+              className="flex items-center p-4 max-sm:px-3 max-sm:py-3 px-7 text-sm font-medium text-white bg-blue-600 rounded-r-3xl max-sm:text-xs focus:border-indigo-400 focus:border-[1px] shadow-cyan-400"
             >
               Submit
             </button>
