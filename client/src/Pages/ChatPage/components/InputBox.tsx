@@ -45,6 +45,7 @@ const InputBox: React.FC = () => {
           </div>
         )}
       </div>
+      {/* ///Hi i am chandan */}
       <form onSubmit={handleSubmit} className="flex fixed bottom-10 justify-center max-sm:w-full mx-auto w-2/3 ">
         <div className="relative w-full">
           <input
