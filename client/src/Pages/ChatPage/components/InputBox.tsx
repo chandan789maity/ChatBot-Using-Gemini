@@ -41,7 +41,7 @@ const InputBox: React.FC = () => {
       console.error('Error sending message to server:', error);
       setInteractions((prev) => {
         const newInteractions = [...prev];
-        newInteractions[currentIndex].answer = 'Sorry, something went wrong.';
+        newInteractions[currentIndex].answer = 'Server is not running on render.';
         return newInteractions;
       });
     } finally {
