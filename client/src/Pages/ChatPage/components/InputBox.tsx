@@ -73,7 +73,7 @@ const InputBox: React.FC = () => {
               )}
               {interaction.answer && (
                 <div className="flex justify-end mb-1">
-                  <div className="dark:bg-black dark:bg-opacity-85 dark:text-white  p-4 font-sans max-w-full max-sm:px-4 max-sm:py-3 max-sm:text-xs rounded-3xl rounded-tr text-sm bg-cyan-100 bg-opacity-45 text-slate-800 shadow-2xl shadow-cyan-400 mt-1">
+                  <div className="dark:bg-black dark:bg-opacity-85 dark:text-white  p-5 font-sans max-w-full max-sm:px-5 max-sm:py-3 max-sm:text-xs rounded-3xl rounded-tr text-sm bg-cyan-100 bg-opacity-45 text-slate-800 shadow-2xl shadow-cyan-400 mt-1">
                     <p>{interaction.answer}</p>
                   </div>
                 </div>
