@@ -17,7 +17,7 @@ const InputBox: React.FC = () => {
         statusCode: number;
         data: string ;
         message: string;
-      }>('http://localhost:8000/api/gemini/chat', { message });
+      }>('https://servergeminibot.onrender.com/api/gemini/chat', { message });
 
       console.log('Server Response:', response.data); // Debugging line
 
