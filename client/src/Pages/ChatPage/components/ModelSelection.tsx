@@ -2,8 +2,8 @@
 
 const ModelSelection = () => {
   return (
-        <div className="w-2/3 bg-transparent max-sm:mt-24 flex max-sm:w-full gap-3 mx-auto justify-center">
-            <div className="cursor-pointer flex gap-2 items-center h-14 bg-slate-50 shadow-2xl px-4 py-5 rounded-3xl dark:bg-sky-400 dark:bg-opacity-50">
+        <div className="w-2/3 bg-transparent max-sm:mt-24 flex max-sm:w-full gap-3 max-sm:gap-3 mx-auto justify-center">
+            <div className="cursor-pointer flex gap-2 items-center h-14 bg-slate-50 shadow-2xl px-4 py-5 rounded-3xl dark:bg-blue-700 dark:bg-opacity-85">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -25,7 +25,7 @@ const ModelSelection = () => {
               </h1>
             </div>
             {/* //Another   */}
-            <div className="cursor-pointer flex gap-2 items-center h-14 bg-slate-50 shadow-2xl px-4 py-5 rounded-3xl dark:bg-sky-400 dark:bg-opacity-50">
+            <div className="cursor-pointer flex gap-2 items-center h-14 bg-slate-50 shadow-2xl px-4 py-5 rounded-3xl dark:bg-blue-700 dark:bg-opacity-85">
               <svg
                 stroke="currentColor"
                 fill="currentColor"

@@ -58,7 +58,7 @@ const InputBox: React.FC = () => {
           {interactions.map((interaction, index) => (
             <div key={index} className="p-2 my-2 text-left flex flex-col">
               <div className="flex justify-end mb-1">
-                <div className="rounded-3xl rounded-tr p-3 max-w-1/2 max-sm:px-4 max-sm:text-xs text-sm bg-violet-900 text-white shadow-2xl shadow-cyan-400">
+                <div className="bg-violet-900 dark:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... rounded-3xl rounded-tr p-3 max-w-1/2 max-sm:px-4 max-sm:text-xs text-sm  text-white shadow-2xl shadow-cyan-400">
                   <p>{interaction.question}</p>
                 </div>
               </div>
@@ -73,7 +73,7 @@ const InputBox: React.FC = () => {
               )}
               {interaction.answer && (
                 <div className="flex justify-end mb-1">
-                  <div className="dark:bg-black dark:text-white dark:bg-opacity-75 p-7 font-sans max-w-full max-sm:px-4 max-sm:text-xs rounded-3xl rounded-tr text-sm bg-cyan-100 bg-opacity-45 text-slate-800 shadow-2xl shadow-cyan-400 mt-1">
+                  <div className="dark:bg-black dark:bg-opacity-85 dark:text-white  p-7 font-sans max-w-full max-sm:px-4 max-sm:text-xs rounded-3xl rounded-tr text-sm bg-cyan-100 bg-opacity-45 text-slate-800 shadow-2xl shadow-cyan-400 mt-1">
                     <p>{interaction.answer}</p>
                   </div>
                 </div>
@@ -88,13 +88,13 @@ const InputBox: React.FC = () => {
               type="text"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full outline-none focus:border-indigo-400 focus:border-[1px] bg-white text-sm px-5 py-3 rounded-l-3xl max-sm:px-3 max-sm:py-3 shadow-2xl shadow-cyan-400"
+              className=" dark:text-white dark:bg-black dark:bg-opacity-45 w-full outline-none focus:border-indigo-400 focus:border-[1px] bg-white text-sm px-5 py-3 rounded-l-3xl max-sm:px-3 max-sm:py-3 shadow-2xl shadow-cyan-400"
               placeholder="Ask me Anything"
               required
             />
             <button
               type="submit"
-              className="flex items-center p-4 max-sm:px-3 max-sm:py-3 px-7 text-sm font-medium text-white bg-blue-600 rounded-r-3xl max-sm:text-xs focus:border-indigo-400 focus:border-[1px] shadow-cyan-400"
+              className="flex items-center p-4 max-sm:px-3 max-sm:py-3 px-7 text-sm font-medium text-white bg-violet-900 rounded-r-3xl max-sm:text-xs focus:border-indigo-400 focus:border-[1px] shadow-cyan-400"
             >
               Submit
             </button>
