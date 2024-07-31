@@ -111,6 +111,8 @@ const Sidebar = React.forwardRef<HTMLDivElement, SidebarProps>(
                   />
                 </svg>
               </a>
+              <div className="h-auto w-full">
+              </div>
             </li>
             <li>
               <a
